@@ -20,11 +20,15 @@ function showOnly(id){
     const addMony=document.getElementById("add-money")
     const transferMony=document.getElementById('transfer-money')
     const getBonus=document.getElementById("get-bonus")
+    const payBill=document.getElementById("bill-money")
+    const history=document.getElementById('history')
 
     cashOut.classList.add("hidden")
     addMony.classList.add("hidden")
     transferMony.classList.add("hidden")
     getBonus.classList.add("hidden")
+    payBill.classList.add("hidden")
+    history.classList.add("hidden")
     const Select=document.getElementById(id)
     Select.classList.remove("hidden")
 }

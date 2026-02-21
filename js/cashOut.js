@@ -15,6 +15,16 @@ document.getElementById('cashOut-button').addEventListener('click',function(){
     if(pin ==="1234"){
         alert("Cash Out Successful")
         setBalance(newBalance);
+                const history = document.getElementById('history-continer')
+        const newHistory = document.createElement("div")
+
+        newHistory.innerHTML = `
+          <div id="history-continer" class="py-5 bg-base-100 rounded-sm">
+            Cash Out Successful to ${cashOutNumber} amount ${amount} at ${new Date()}
+          </div>
+        `
+        history.append(newHistory)
+        return
     }
     else{
         alert("Cash Out Field")
